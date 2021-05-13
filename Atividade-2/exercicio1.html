@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+   <div>
+       <h1>Reserva Hotel IFSP</h1>
+       <p>Insira suas informaçoes</p>
+       <br>
+   </div>
+
+   <form>
+        <fieldset>
+            <div>
+                <label>Nome Completo</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div>
+                <label>Email</label>
+                <input type="Email" name="email" id="email">
+            </div>
+
+            <div>
+                <label>Repita o Email</label>
+                <input type="Email" name="repemail" id="repemail">
+            </div>
+
+            <div>
+                <label>Estado de origem</label>
+                <select id="cities">
+                    <option value="AC">Acre</option>
+	                <option value="AL">Alagoas</option>
+                	<option value="AP">Amapá</option>
+                	<option value="AM">Amazonas</option>
+                	<option value="BA">Bahia</option>
+                	<option value="CE">Ceará</option>
+                	<option value="DF">Distrito Federal</option>
+                	<option value="ES">Espírito Santo</option>
+                	<option value="GO">Goiás</option>
+                	<option value="MA">Maranhão</option>
+                	<option value="MT">Mato Grosso</option>
+                	<option value="MS">Mato Grosso do Sul</option>
+                	<option value="MG">Minas Gerais</option>
+	                <option value="PA">Pará</option>
+	                <option value="PB">Paraíba</option>
+	                <option value="PR">Paraná</option>
+	                <option value="PE">Pernambuco</option>
+                	<option value="PI">Piauí</option>
+                	<option value="RJ">Rio de Janeiro</option>
+                	<option value="RN">Rio Grande do Norte</option>
+	                <option value="RS">Rio Grande do Sul</option>
+	                <option value="RO">Rondônia</option>
+                	<option value="RR">Roraima</option>
+                	<option value="SC">Santa Catarina</option>
+                	<option value="SP">São Paulo</option>
+                	<option value="SE">Sergipe</option>
+                	<option value="TO">Tocantins</option>
+                </select>
+            </div>
+            
+            <div>
+                <label>Data de chegada</label>
+                <input type="date" name="data" id="data">
+            </div>
+
+            <div>
+                <label>Número de Noites (quartos são R$99,00)</label>
+                <input type="number" min="1" max="30">
+                <label>(min 1, max30)</label>
+            </div>
+
+            <div>
+                <label>Número de Noites (adicional por convidadosR$10,00 por noite)</label>
+                <input type="number" min="1" max="30">
+                <label>(min 1, max4)</label>
+            </div>
+             
+        </fieldset>
+        
+        <div>
+            <label>Codigo promocional</label>
+            <input type="number" name="num" id="num">
+        </div>
+
+   </form>
+</body>
+</html>
